@@ -1,0 +1,17 @@
+<%= form_for(@article) do |form| %>
+
+  <div class="container center_div">
+    <h1>New Article</h1>
+    <%= form.label("Title") %>
+    <%= form.text_field(:title) %>
+    <br>
+    <%= form.label("Article details") %>
+    <%= form.text_field(:article_details) %>
+    <br>
+    <%= form.file_field :avatar %>
+    <br><br>
+    <%= form.submit 'Create' %>
+  </div>
+<% end %>
+
+
